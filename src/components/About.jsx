@@ -62,12 +62,7 @@ const About = () => {
             >
               <FiClock size={16} /> Open to freelance
             </motion.div>
-            <motion.div
-              className="chip"
-              whileHover={{ scale: 1.06, y: -2 }}
-            >
-              <FiMusic size={16} /> Powered by lo-fi
-            </motion.div>
+
           </motion.div>
         </motion.div>
 
