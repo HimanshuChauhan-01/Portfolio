@@ -1,0 +1,45 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1600" y2="1200">
+      <stop offset="0%" style="stop-color:#0a0e1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0f1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#050811;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="lightGlow" cx="70%" cy="30%">
+      <stop offset="0%" style="stop-color:#73d4ff;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#73d4ff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="1600" height="1200" fill="url(#bgGrad)"/>
+  <rect width="1600" height="1200" fill="url(#lightGlow)"/>
+  
+  <!-- Ground -->
+  <ellipse cx="800" cy="1100" rx="600" ry="120" fill="#030609" opacity="0.6"/>
+  
+  <!-- Figure from back - more realistic proportions -->
+  <!-- Hair/Head -->
+  <path d="M1050 180 Q1100 140 1150 150 Q1180 160 1190 200 Q1185 240 1160 260 Q1120 280 1080 270 Q1040 260 1050 180" fill="#2a2a2a"/>
+  
+  <!-- Neck -->
+  <rect x="1090" y="260" width="60" height="80" fill="#b8956a" opacity="0.9"/>
+  
+  <!-- Shoulders -->
+  <path d="M1000 340 Q1030 330 1100 330 Q1170 330 1200 340 L1210 420 Q1150 440 1090 440 Q1030 440 990 420 Z" fill="#1a2638"/>
+  
+  <!-- Upper back -->
+  <path d="M1010 420 Q1090 410 1170 410 Q1190 500 1180 600 L1020 600 Q1015 500 1010 420" fill="#1f2d42"/>
+  
+  <!-- Arms (subtle) -->
+  <path d="M1000 420 Q970 480 960 560 Q959 600 965 640" stroke="#1a2638" stroke-width="28" fill="none" opacity="0.8"/>
+  <path d="M1180 420 Q1210 480 1220 560 Q1225 600 1220 640" stroke="#1a2638" stroke-width="28" fill="none" opacity="0.8"/>
+  
+  <!-- Lower back -->
+  <path d="M1030 600 L1020 900 Q1080 920 1150 920 L1160 600" fill="#192130"/>
+  
+  <!-- Accent light on shoulder -->
+  <ellipse cx="1120" cy="380" rx="80" ry="60" fill="#3d5a7d" opacity="0.4"/>
+  
+  <!-- Atmospheric glow behind figure -->
+  <circle cx="1120" cy="500" r="280" fill="#1e3a52" opacity="0.15"/>
+</svg>

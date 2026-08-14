@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1200" fill="#0a0e1a"/>
+
+  <!-- PURE BLACK SILHOUETTE - Highly visible -->
+  <g id="figure">
+    <!-- HEAD -->
+    <circle cx="800" cy="220" r="115" fill="#000000"/>
+    
+    <!-- Hair texture -->
+    <path d="M 750 130 Q 720 125 715 170" stroke="#000000" stroke-width="28" fill="none" stroke-linecap="round"/>
+    <path d="M 850 130 Q 880 125 885 170" stroke="#000000" stroke-width="28" fill="none" stroke-linecap="round"/>
+    
+    <!-- NECK -->
+    <path d="M 770 325 L 770 410 Q 770 440 785 460 L 815 460 Q 830 440 830 410 L 830 325" fill="#000000"/>
+    
+    <!-- SHOULDER LINE -->
+    <path d="M 470 420 Q 630 350 800 340 Q 970 350 1130 420" stroke="#000000" stroke-width="160" fill="none" stroke-linecap="round"/>
+    
+    <!-- SHOULDERS - LARGE AND DEFINED -->
+    <ellipse cx="480" cy="520" rx="200" ry="290" fill="#000000"/>
+    <ellipse cx="1120" cy="520" rx="200" ry="290" fill="#000000"/>
+    
+    <!-- UPPER BACK - CORE BODY -->
+    <path d="M 600 380 Q 580 420 580 500 L 580 900 Q 600 1000 650 1080 L 800 1140 L 950 1080 Q 1000 1000 1020 900 L 1020 500 Q 1020 420 1000 380" 
+          fill="#000000"/>
+    
+    <!-- Back center definition -->
+    <path d="M 800 380 L 800 1140" stroke="#0a0e1a" stroke-width="16" opacity="0.5"/>
+    
+    <!-- Muscle definition strokes -->
+    <path d="M 680 480 L 680 950" stroke="#0a0e1a" stroke-width="20" opacity="0.4"/>
+    <path d="M 920 480 L 920 950" stroke="#0a0e1a" stroke-width="20" opacity="0.4"/>
+    
+    <!-- LEFT ARM - Extended -->
+    <path d="M 450 480 Q 280 580 220 900 L 200 1140" 
+          stroke="#000000" stroke-width="85" fill="none" stroke-linecap="round"/>
+    
+    <!-- LEFT ARM inner definition -->
+    <path d="M 480 510 Q 330 600 280 900 L 265 1110" 
+          stroke="#0a0e1a" stroke-width="32" fill="none" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- RIGHT ARM - Extended -->
+    <path d="M 1150 480 Q 1320 580 1380 900 L 1400 1140" 
+          stroke="#000000" stroke-width="85" fill="none" stroke-linecap="round"/>
+    
+    <!-- RIGHT ARM inner definition -->
+    <path d="M 1120 510 Q 1270 600 1320 900 L 1335 1110" 
+          stroke="#0a0e1a" stroke-width="32" fill="none" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- LOWER BACK CURVE -->
+    <ellipse cx="800" cy="950" rx="260" ry="200" fill="#000000"/>
+    
+    <!-- Subtle depth at edges -->
+    <path d="M 450 420 Q 420 550 430 800" stroke="#0a0e1a" stroke-width="20" opacity="0.3"/>
+    <path d="M 1150 420 Q 1180 550 1170 800" stroke="#0a0e1a" stroke-width="20" opacity="0.3"/>
+  </g>
+
+  <!-- Rim light glow (very subtle) -->
+  <ellipse cx="800" cy="500" rx="520" ry="420" fill="none" stroke="#1a3a5a" stroke-width="2" opacity="0.15"/>
+  
+  <!-- Vignette -->
+  <radialGradient id="vignette" cx="50%" cy="35%">
+    <stop offset="50%" style="stop-color:#000000;stop-opacity:0" />
+    <stop offset="100%" style="stop-color:#000000;stop-opacity:0.3" />
+  </radialGradient>
+  <rect width="1600" height="1200" fill="url(#vignette)"/>
+</svg>
