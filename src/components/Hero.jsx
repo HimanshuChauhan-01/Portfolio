@@ -79,14 +79,6 @@ const Hero = ({ heroRef, heroScale, heroOpacity, isPlaying, setIsPlaying }) => {
               >
                 <FiPlay size={18} /> View Projects
               </motion.a>
-              <motion.a
-                href="#"
-                className="btn-secondary-sp"
-                whileHover={{ scale: 1.04, y: -2, borderColor: '#1DB954' }}
-                whileTap={{ scale: 0.97 }}
-              >
-                <FiDownloadCloud size={18} /> Download CV
-              </motion.a>
             </motion.div>
 
             <motion.div 
